@@ -1,0 +1,9 @@
+{% extends 'ui/mainbase.html' %}
+
+{% block content %}
+<ul>
+    {% for produto in object_list %}
+    <li>{{ produto }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

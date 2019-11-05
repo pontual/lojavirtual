@@ -1,0 +1,9 @@
+{% extends 'ui/mainbase.html' %}
+
+{% block content %}
+<ul>
+    {% for cliente in object_list %}
+    <li>{{ cliente }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
