@@ -6,4 +6,8 @@ urlpatterns = [
     path('', ui_index, name="index"),
     path('ui/', include('ui.urls')),
     path('admin/', admin.site.urls),
+    path('clientes/', include('clientes.urls')),
+    path('produtos/', include('produtos.urls')),
+    path('financeiro/', include('financeiro.urls')),
+    path('pac/', include('pac.urls')),
 ]
